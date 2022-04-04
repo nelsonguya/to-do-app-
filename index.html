@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="preload" href="./assets/icon-check.svg" as="image" type="image/svg+xml" crossorigin="anonymous">
+    <title>KFC To-do App</title>
+</head>
+
+<body>
+    <header class="card">
+        <h1>Todo Items</h1>
+        <button id="theme-switch">
+            <img src="./assets/sun.svg" alt="Alter theme" />
+        </button>
+    </header>
+
+    <main>
+        <div class="card add">
+            <div class="cb-container">
+                <button id="add-btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+            <div class="txt-container">
+                <input type="text" class="txt-input" placeholder="E.g. Complete Frontend Project" spellcheck="false" autocomplete="off" />
+            </div>
+        </div>
+        <ul class="todos"></ul>
+        <div class="card stat">
+            <p class="corner"><span id="items-left">0</span> items left</p>
+            <div class="filter">
+                <button id="all" class="on">All</button>
+                <button id="active">Active</button>
+                <button id="completed">Completed</button>
+            </div>
+            <div class="corner">
+                <button id="clear-completed">Clear Completed</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Drag & Drop to Re-order List</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
